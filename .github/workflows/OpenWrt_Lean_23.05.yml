@@ -11,10 +11,10 @@ name: OpenWrt_Lean_23.05-Beggar
 on:
   repository_dispatch:
   workflow_dispatch:
-  # schedule:
-  #   - cron: 11 23 * * * 
-  # watch:
-     types: started
+  schedule:
+   - cron: 11 23 * * * 
+  watch:
+      types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
